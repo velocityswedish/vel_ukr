@@ -119,7 +119,37 @@
       "ukrainian": "Вір у, власну міць.",
       "category": "Strength",
       "generated_at": "2026-03-22T19:47:20.127255"
+    },
+    {
+      "english": "Slow and steady, wins the race.",
+      "ukrainian": "Повільно і стабільно, перемагає.",
+      "category": "Patience",
+      "generated_at": "2026-03-22T22:57:02.240217"
+    },
+    {
+      "english": "Good things, take time.",
+      "ukrainian": "Гарні речі, потребують часу.",
+      "category": "Patience",
+      "generated_at": "2026-03-22T22:57:02.240226"
+    },
+    {
+      "english": "Every step, counts forward.",
+      "ukrainian": "Кожен крок, має значення.",
+      "category": "Patience",
+      "generated_at": "2026-03-22T22:57:02.240228"
+    },
+    {
+      "english": "Don't rush, it's a journey.",
+      "ukrainian": "Не поспішай, це подорож.",
+      "category": "Patience",
+      "generated_at": "2026-03-22T22:57:02.240229"
+    },
+    {
+      "english": "Keep trying, little by little.",
+      "ukrainian": "Продовжуй намагатися, потроху.",
+      "category": "Patience",
+      "generated_at": "2026-03-22T22:57:02.240230"
     }
   ],
-  "last_updated": "2026-03-22T19:47:20.127257"
+  "last_updated": "2026-03-22T22:57:02.240232"
 }
