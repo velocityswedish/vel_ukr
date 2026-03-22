@@ -59,7 +59,37 @@
       "ukrainian": "Не здавайся, іди далі.",
       "category": "Courage",
       "generated_at": "2026-03-22T14:05:02.551207"
+    },
+    {
+      "english": "My heart, beats for you.",
+      "ukrainian": "Моє серце, б'ється для тебе.",
+      "category": "Love",
+      "generated_at": "2026-03-22T16:59:35.758351"
+    },
+    {
+      "english": "You are, my sunshine.",
+      "ukrainian": "Ти моє, сонечко.",
+      "category": "Love",
+      "generated_at": "2026-03-22T16:59:35.758359"
+    },
+    {
+      "english": "I miss you, deeply.",
+      "ukrainian": "Я сумую, сильно.",
+      "category": "Love",
+      "generated_at": "2026-03-22T16:59:35.758360"
+    },
+    {
+      "english": "Thinking of you, always.",
+      "ukrainian": "Думаю про тебе, завжди.",
+      "category": "Love",
+      "generated_at": "2026-03-22T16:59:35.758361"
+    },
+    {
+      "english": "You make me, happy.",
+      "ukrainian": "Ти робиш мене, щасливим/щасливою.",
+      "category": "Love",
+      "generated_at": "2026-03-22T16:59:35.758362"
     }
   ],
-  "last_updated": "2026-03-22T14:05:02.551208"
+  "last_updated": "2026-03-22T16:59:35.758369"
 }
