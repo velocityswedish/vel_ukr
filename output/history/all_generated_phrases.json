@@ -29,7 +29,37 @@
       "ukrainian": "Слухай уважно, вчись швидше.",
       "category": "Motivation",
       "generated_at": "2026-03-22T10:55:54.943997"
+    },
+    {
+      "english": "Be brave, little one.",
+      "ukrainian": "Будь сміливим, малюче.",
+      "category": "Courage",
+      "generated_at": "2026-03-22T14:05:02.551194"
+    },
+    {
+      "english": "Face your fears, boldly.",
+      "ukrainian": "Зустрічай страх, сміливо.",
+      "category": "Courage",
+      "generated_at": "2026-03-22T14:05:02.551203"
+    },
+    {
+      "english": "Strength comes from within.",
+      "ukrainian": "Сила йде зсередини.",
+      "category": "Courage",
+      "generated_at": "2026-03-22T14:05:02.551204"
+    },
+    {
+      "english": "Try again, be strong.",
+      "ukrainian": "Спробуй знову, будь сильним.",
+      "category": "Courage",
+      "generated_at": "2026-03-22T14:05:02.551205"
+    },
+    {
+      "english": "Don't give up, keep going.",
+      "ukrainian": "Не здавайся, іди далі.",
+      "category": "Courage",
+      "generated_at": "2026-03-22T14:05:02.551207"
     }
   ],
-  "last_updated": "2026-03-22T10:55:54.943999"
+  "last_updated": "2026-03-22T14:05:02.551208"
 }
