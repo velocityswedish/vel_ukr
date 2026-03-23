@@ -239,7 +239,37 @@
       "ukrainian": "Світло прийде, скоро.",
       "category": "Hope",
       "generated_at": "2026-03-23T18:11:22.327533"
+    },
+    {
+      "english": "Good friends, are rare.",
+      "ukrainian": "Добрі друзі, це рідкість.",
+      "category": "Friendship",
+      "generated_at": "2026-03-23T20:58:22.724077"
+    },
+    {
+      "english": "You are a true friend.",
+      "ukrainian": "Ти справжній друг.",
+      "category": "Friendship",
+      "generated_at": "2026-03-23T20:58:22.724087"
+    },
+    {
+      "english": "We have fun, together.",
+      "ukrainian": "Ми веселимось, разом.",
+      "category": "Friendship",
+      "generated_at": "2026-03-23T20:58:22.724088"
+    },
+    {
+      "english": "Thank you, for everything.",
+      "ukrainian": "Дякую, за все.",
+      "category": "Friendship",
+      "generated_at": "2026-03-23T20:58:22.724090"
+    },
+    {
+      "english": "I trust you, completely.",
+      "ukrainian": "Я тобі, повністю довіряю.",
+      "category": "Friendship",
+      "generated_at": "2026-03-23T20:58:22.724091"
     }
   ],
-  "last_updated": "2026-03-23T18:11:22.327534"
+  "last_updated": "2026-03-23T20:58:22.724093"
 }
