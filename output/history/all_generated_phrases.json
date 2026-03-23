@@ -179,7 +179,37 @@
       "ukrainian": "Зрозумій історію, твори майбутнє.",
       "category": "Purpose",
       "generated_at": "2026-03-23T05:56:46.710010"
+    },
+    {
+      "english": "I forgive you, completely.",
+      "ukrainian": "Я прощаю тебе, повністю.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-23T16:14:36.338621"
+    },
+    {
+      "english": "Let's move forward, together.",
+      "ukrainian": "Рухаймося далі, разом.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-23T16:14:36.338629"
+    },
+    {
+      "english": "No hard feelings, okay?",
+      "ukrainian": "Без образ, добре?",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-23T16:14:36.338630"
+    },
+    {
+      "english": "It's all good now.",
+      "ukrainian": "Все добре, зараз.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-23T16:14:36.338632"
+    },
+    {
+      "english": "I understand, and forgive.",
+      "ukrainian": "Я розумію, і прощаю.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-23T16:14:36.338633"
     }
   ],
-  "last_updated": "2026-03-23T05:56:46.710012"
+  "last_updated": "2026-03-23T16:14:36.338635"
 }
