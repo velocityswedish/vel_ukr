@@ -209,7 +209,37 @@
       "ukrainian": "Я розумію, і прощаю.",
       "category": "Forgiveness",
       "generated_at": "2026-03-23T16:14:36.338633"
+    },
+    {
+      "english": "Keep going, don't stop.",
+      "ukrainian": "Тримайся, не зупиняйся.",
+      "category": "Hope",
+      "generated_at": "2026-03-23T18:11:22.327517"
+    },
+    {
+      "english": "Tomorrow, a new start.",
+      "ukrainian": "Завтра, новий початок.",
+      "category": "Hope",
+      "generated_at": "2026-03-23T18:11:22.327525"
+    },
+    {
+      "english": "Believe in yourself, always.",
+      "ukrainian": "Вір у себе, завжди.",
+      "category": "Hope",
+      "generated_at": "2026-03-23T18:11:22.327527"
+    },
+    {
+      "english": "Every day, a chance.",
+      "ukrainian": "Кожен день, шанс.",
+      "category": "Hope",
+      "generated_at": "2026-03-23T18:11:22.327528"
+    },
+    {
+      "english": "Light will come, soon.",
+      "ukrainian": "Світло прийде, скоро.",
+      "category": "Hope",
+      "generated_at": "2026-03-23T18:11:22.327533"
     }
   ],
-  "last_updated": "2026-03-23T16:14:36.338635"
+  "last_updated": "2026-03-23T18:11:22.327534"
 }
