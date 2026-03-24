@@ -389,7 +389,37 @@
       "ukrainian": "Майже там, не зупиняйся.",
       "category": "Success",
       "generated_at": "2026-03-24T19:36:50.743021"
+    },
+    {
+      "english": "Be kind, always.",
+      "ukrainian": "Будь добрим, завжди.",
+      "category": "Kindness",
+      "generated_at": "2026-03-24T21:01:11.325742"
+    },
+    {
+      "english": "Share a smile, today.",
+      "ukrainian": "Поділися усмішкою, сьогодні.",
+      "category": "Kindness",
+      "generated_at": "2026-03-24T21:01:11.325749"
+    },
+    {
+      "english": "Help others, it matters.",
+      "ukrainian": "Допомагай іншим, це важливо.",
+      "category": "Kindness",
+      "generated_at": "2026-03-24T21:01:11.325751"
+    },
+    {
+      "english": "Listen well, be present.",
+      "ukrainian": "Слухай уважно, будь тут.",
+      "category": "Kindness",
+      "generated_at": "2026-03-24T21:01:11.325752"
+    },
+    {
+      "english": "Offer comfort, gently.",
+      "ukrainian": "Пропонуй підтримку, лагідно.",
+      "category": "Kindness",
+      "generated_at": "2026-03-24T21:01:11.325753"
     }
   ],
-  "last_updated": "2026-03-24T19:36:50.743022"
+  "last_updated": "2026-03-24T21:01:11.325754"
 }
