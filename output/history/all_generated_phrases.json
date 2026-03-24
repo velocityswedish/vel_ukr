@@ -359,7 +359,37 @@
       "ukrainian": "Дрібниці, важливі.",
       "category": "Happiness",
       "generated_at": "2026-03-24T16:41:43.367179"
+    },
+    {
+      "english": "Keep going, you're doing great.",
+      "ukrainian": "Продовжуй, ти чудово справляєшся.",
+      "category": "Success",
+      "generated_at": "2026-03-24T19:36:50.743008"
+    },
+    {
+      "english": "Little by little, we learn.",
+      "ukrainian": "Крок за кроком, ми вчимося.",
+      "category": "Success",
+      "generated_at": "2026-03-24T19:36:50.743017"
+    },
+    {
+      "english": "Every day, a new word.",
+      "ukrainian": "Кожен день, нове слово.",
+      "category": "Success",
+      "generated_at": "2026-03-24T19:36:50.743018"
+    },
+    {
+      "english": "You understand, yes?",
+      "ukrainian": "Ти розумієш, так?",
+      "category": "Success",
+      "generated_at": "2026-03-24T19:36:50.743020"
+    },
+    {
+      "english": "Almost there, don't stop.",
+      "ukrainian": "Майже там, не зупиняйся.",
+      "category": "Success",
+      "generated_at": "2026-03-24T19:36:50.743021"
     }
   ],
-  "last_updated": "2026-03-24T16:41:43.367182"
+  "last_updated": "2026-03-24T19:36:50.743022"
 }
