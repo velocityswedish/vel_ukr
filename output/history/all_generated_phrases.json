@@ -629,7 +629,37 @@
       "ukrainian": "Твоя сила, в тобі самій.",
       "category": "Strength",
       "generated_at": "2026-03-26T16:45:29.705694"
+    },
+    {
+      "english": "Patience, is a virtue.",
+      "ukrainian": "Терпіння, це чеснота.",
+      "category": "Patience",
+      "generated_at": "2026-03-26T20:06:19.292008"
+    },
+    {
+      "english": "One day, you will get there.",
+      "ukrainian": "Одного дня, ти досягнеш.",
+      "category": "Patience",
+      "generated_at": "2026-03-26T20:06:19.292018"
+    },
+    {
+      "english": "Building dreams, brick by brick.",
+      "ukrainian": "Будуй мрії, цеглина за цеглиною.",
+      "category": "Patience",
+      "generated_at": "2026-03-26T20:06:19.292019"
+    },
+    {
+      "english": "Small progress, is still progress.",
+      "ukrainian": "Маленький прогрес, це теж прогрес.",
+      "category": "Patience",
+      "generated_at": "2026-03-26T20:06:19.292020"
+    },
+    {
+      "english": "Wait for it, it's worth it.",
+      "ukrainian": "Дочекайся, це того варте.",
+      "category": "Patience",
+      "generated_at": "2026-03-26T20:06:19.292022"
     }
   ],
-  "last_updated": "2026-03-26T16:45:29.705696"
+  "last_updated": "2026-03-26T20:06:19.292023"
 }
