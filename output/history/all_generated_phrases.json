@@ -5399,7 +5399,37 @@
       "ukrainian": "Твій внутрішній вогонь, палає яскраво.",
       "category": "Strength",
       "generated_at": "2026-05-16T17:04:35.253305"
+    },
+    {
+      "english": "The river flows, don't fight it.",
+      "ukrainian": "Річка тече, не опирайся.",
+      "category": "Balance",
+      "generated_at": "2026-05-16T22:48:14.098429"
+    },
+    {
+      "english": "Find your rhythm, gently.",
+      "ukrainian": "Знайди свій ритм, спокійно.",
+      "category": "Balance",
+      "generated_at": "2026-05-16T22:48:14.098439"
+    },
+    {
+      "english": "Sunlight finds shadows, too.",
+      "ukrainian": "Сонце знаходить тіні, теж.",
+      "category": "Balance",
+      "generated_at": "2026-05-16T22:48:14.098441"
+    },
+    {
+      "english": "Listen to the quiet wind.",
+      "ukrainian": "Слухай тихий вітер.",
+      "category": "Balance",
+      "generated_at": "2026-05-16T22:48:14.098442"
+    },
+    {
+      "english": "Balance your roots, grow tall.",
+      "ukrainian": "Збалансуй коріння, рости високо.",
+      "category": "Balance",
+      "generated_at": "2026-05-16T22:48:14.098443"
     }
   ],
-  "last_updated": "2026-05-16T17:04:35.253306"
+  "last_updated": "2026-05-16T22:48:14.098445"
 }
