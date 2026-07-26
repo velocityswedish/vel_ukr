@@ -106,6 +106,11 @@ LANGUAGE_MAP = {
     "mar": "Marathi", "marathi": "Marathi",
     "telu": "Telugu",
     "mal": "Malayalam", "malayalam": "Malayalam",
+    "ukr": "Ukrainian", "ukrainian": "Ukrainian",
+    "nor": "Norwegian", "norwegian": "Norwegian",
+    "gre": "Greek", "greek": "Greek",
+    "finn": "Finnish", "finnish": "Finnish",
+    "dan": "Danish", "danish": "Danish",
 }
 
 
