@@ -17549,7 +17549,37 @@
       "ukrainian": "Сьогодні легше, бо я намагаюся.",
       "category": "Confidence",
       "generated_at": "2026-08-17T16:33:32.502588"
+    },
+    {
+      "english": "Courage, when hands shake, still opens doors.",
+      "ukrainian": "Сміливість, коли тремтять руки, відкриває двері.",
+      "category": "Courage",
+      "generated_at": "2026-08-17T19:31:56.468793"
+    },
+    {
+      "english": "I nod, I breathe, I step forward.",
+      "ukrainian": "Я киваю, я дихаю, я роблю крок вперед.",
+      "category": "Courage",
+      "generated_at": "2026-08-17T19:31:56.468804"
+    },
+    {
+      "english": "Fear whispers, I answer with action.",
+      "ukrainian": "Страх шепоче, я відповідаю дією.",
+      "category": "Courage",
+      "generated_at": "2026-08-17T19:31:56.468805"
+    },
+    {
+      "english": "Tonight, I do it, even quietly.",
+      "ukrainian": "Сьогодні, я зроблю це, навіть тихо.",
+      "category": "Courage",
+      "generated_at": "2026-08-17T19:31:56.468807"
+    },
+    {
+      "english": "My voice trembles, the lesson still lands.",
+      "ukrainian": "Мій голос тремтить, урок усе одно стає.",
+      "category": "Courage",
+      "generated_at": "2026-08-17T19:31:56.468808"
     }
   ],
-  "last_updated": "2026-08-17T16:33:32.502590"
+  "last_updated": "2026-08-17T19:31:56.468810"
 }
