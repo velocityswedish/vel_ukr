@@ -18179,7 +18179,37 @@
       "ukrainian": "Відчуй підлогу, закоріни силу, йди далі.",
       "category": "Strength",
       "generated_at": "2026-08-21T19:28:35.582932"
+    },
+    {
+      "english": "I wake early, words follow me.",
+      "ukrainian": "Я встаю рано, слова мене наздоганяють.",
+      "category": "Purpose",
+      "generated_at": "2026-08-21T22:25:55.510780"
+    },
+    {
+      "english": "In my pocket, I carry new verbs.",
+      "ukrainian": "У кишені, я ношу нові дієслова.",
+      "category": "Purpose",
+      "generated_at": "2026-08-21T22:25:55.510789"
+    },
+    {
+      "english": "Morning coffee, I practice gentle phrases.",
+      "ukrainian": "Каву зранку, я промовляю м’які фрази.",
+      "category": "Purpose",
+      "generated_at": "2026-08-21T22:25:55.510790"
+    },
+    {
+      "english": "I read one page, and breathe Ukrainian.",
+      "ukrainian": "Я читаю одну сторінку, і дихаю українською.",
+      "category": "Purpose",
+      "generated_at": "2026-08-21T22:25:55.510791"
+    },
+    {
+      "english": "My phone buzzes, I answer in Ukrainian.",
+      "ukrainian": "Телефон дзвенить, я відповідаю українською.",
+      "category": "Purpose",
+      "generated_at": "2026-08-21T22:25:55.510792"
     }
   ],
-  "last_updated": "2026-08-21T19:28:35.582947"
+  "last_updated": "2026-08-21T22:25:55.510794"
 }
