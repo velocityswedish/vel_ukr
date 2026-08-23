@@ -18389,7 +18389,37 @@
       "ukrainian": "Сядь, вирівняй спину, повільно видихай, ще раз.",
       "category": "Balance",
       "generated_at": "2026-08-23T02:24:04.481842"
+    },
+    {
+      "english": "Wait gently, the storm will pass.",
+      "ukrainian": "Жди лагідно, буря мине.",
+      "category": "Patience",
+      "generated_at": "2026-08-23T13:30:42.398583"
+    },
+    {
+      "english": "Breathe, results arrive on their time.",
+      "ukrainian": "Дихай, результати прийдуть свого часу.",
+      "category": "Patience",
+      "generated_at": "2026-08-23T13:30:42.398595"
+    },
+    {
+      "english": "Hold steady, roads change slowly.",
+      "ukrainian": "Тримай рівно, дороги міняються повільно.",
+      "category": "Patience",
+      "generated_at": "2026-08-23T13:30:42.398597"
+    },
+    {
+      "english": "Let today be practice, not proof.",
+      "ukrainian": "Нехай сьогодні буде вправою, не доказом.",
+      "category": "Patience",
+      "generated_at": "2026-08-23T13:30:42.398598"
+    },
+    {
+      "english": "Listen quietly, patience speaks in pauses.",
+      "ukrainian": "Слухай тихо, терпіння звучить у паузах.",
+      "category": "Patience",
+      "generated_at": "2026-08-23T13:30:42.398599"
     }
   ],
-  "last_updated": "2026-08-23T02:24:04.481844"
+  "last_updated": "2026-08-23T13:30:42.398601"
 }
