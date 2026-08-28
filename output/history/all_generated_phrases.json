@@ -19079,7 +19079,37 @@
       "ukrainian": "Мої помилки вчать мене, я слухаю.",
       "category": "Confidence",
       "generated_at": "2026-08-28T12:34:22.645567"
+    },
+    {
+      "english": "Feel your breath, count five, soften your shoulders",
+      "ukrainian": "Відчуй дихання, порахуй п'ять, розслаб плечі",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-28T22:53:16.483487"
+    },
+    {
+      "english": "Listen to the room, notice sounds nearby",
+      "ukrainian": "Слухай кімнату, помічай звуки поруч",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-28T22:53:16.483496"
+    },
+    {
+      "english": "Let thoughts pass, like clouds on a breeze",
+      "ukrainian": "Нехай думки минають, мов хмари на вітрі",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-28T22:53:16.483498"
+    },
+    {
+      "english": "Unclench your jaw, release tension, then smile",
+      "ukrainian": "Розтисни щелепу, відпусти напругу, усміхнись",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-28T22:53:16.483499"
+    },
+    {
+      "english": "Your hands are present, feel warmth in palms",
+      "ukrainian": "Твої руки тут, відчуй тепло в долонях",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-28T22:53:16.483500"
     }
   ],
-  "last_updated": "2026-08-28T12:34:22.645569"
+  "last_updated": "2026-08-28T22:53:16.483501"
 }
