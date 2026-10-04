@@ -24659,7 +24659,37 @@
       "ukrainian": "Одна чашка чаю, рівне дихання.",
       "category": "Balance",
       "generated_at": "2026-10-04T17:18:08.897177"
+    },
+    {
+      "english": "Hold the door, for a stranger",
+      "ukrainian": "Тримай двері, для незнайомця",
+      "category": "Kindness",
+      "generated_at": "2026-10-04T19:22:34.551890"
+    },
+    {
+      "english": "Leave a seat, near someone quiet",
+      "ukrainian": "Звільни місце, біля когось тихого",
+      "category": "Kindness",
+      "generated_at": "2026-10-04T19:22:34.551902"
+    },
+    {
+      "english": "Offer your help, before they ask",
+      "ukrainian": "Запропонуй допомогу, ще до їхнього прохання",
+      "category": "Kindness",
+      "generated_at": "2026-10-04T19:22:34.551903"
+    },
+    {
+      "english": "Warm a smile, on a cold morning",
+      "ukrainian": "Усміх зігрій, у холодний ранок",
+      "category": "Kindness",
+      "generated_at": "2026-10-04T19:22:34.551904"
+    },
+    {
+      "english": "Say thanks first, and mean it",
+      "ukrainian": "Скажи дякую, і щиро",
+      "category": "Kindness",
+      "generated_at": "2026-10-04T19:22:34.551906"
     }
   ],
-  "last_updated": "2026-10-04T17:18:08.897178"
+  "last_updated": "2026-10-04T19:22:34.551907"
 }
