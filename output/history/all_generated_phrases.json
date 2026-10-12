@@ -25829,7 +25829,37 @@
       "ukrainian": "Перерва на обід, думки осідають, руки працюють.",
       "category": "Balance",
       "generated_at": "2026-10-12T21:33:31.483002"
+    },
+    {
+      "english": "Good morning, warm tea, quiet start.",
+      "ukrainian": "Доброго ранку, теплий чай, тихий старт.",
+      "category": "Joy",
+      "generated_at": "2026-10-12T22:49:56.160912"
+    },
+    {
+      "english": "I notice light, I breathe, I smile.",
+      "ukrainian": "Я помічаю світло, я дихаю, я усміхаюся.",
+      "category": "Joy",
+      "generated_at": "2026-10-12T22:49:56.160922"
+    },
+    {
+      "english": "My street hums, my heart listens.",
+      "ukrainian": "Моя вулиця гуде, моє серце слухає.",
+      "category": "Joy",
+      "generated_at": "2026-10-12T22:49:56.160923"
+    },
+    {
+      "english": "Books whisper, I turn pages, joy appears.",
+      "ukrainian": "Книжки шепочуть, я перегортаю, радість з’являється.",
+      "category": "Joy",
+      "generated_at": "2026-10-12T22:49:56.160925"
+    },
+    {
+      "english": "Shoes on, rain off, I laugh.",
+      "ukrainian": "Черевики на, дощ минає, я сміюся.",
+      "category": "Joy",
+      "generated_at": "2026-10-12T22:49:56.160926"
     }
   ],
-  "last_updated": "2026-10-12T21:33:31.483004"
+  "last_updated": "2026-10-12T22:49:56.160927"
 }
