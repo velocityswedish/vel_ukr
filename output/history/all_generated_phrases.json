@@ -26399,7 +26399,37 @@
       "ukrainian": "Я вчуся з помилок, потім підлаштовуюсь.",
       "category": "Confidence",
       "generated_at": "2026-10-16T05:34:29.752163"
+    },
+    {
+      "english": "Warm tea, steady breath, study one more minute.",
+      "ukrainian": "Теплий чай, рівний подих, ще хвилинку вчись.",
+      "category": "Purpose",
+      "generated_at": "2026-10-16T17:10:16.253666"
+    },
+    {
+      "english": "Morning bus, listen closely, repeat softly.",
+      "ukrainian": "Ранковий автобус, слухай уважно, повторюй тихо.",
+      "category": "Purpose",
+      "generated_at": "2026-10-16T17:10:16.253676"
+    },
+    {
+      "english": "Notebook open, let mistakes guide your next word.",
+      "ukrainian": "Зошит розкритий, помилки підкажуть наступне слово.",
+      "category": "Purpose",
+      "generated_at": "2026-10-16T17:10:16.253677"
+    },
+    {
+      "english": "Kitchen sounds, practice verbs, keep rhythm.",
+      "ukrainian": "Кухонні звуки, вправляй дієслова, тримай ритм.",
+      "category": "Purpose",
+      "generated_at": "2026-10-16T17:10:16.253678"
+    },
+    {
+      "english": "Street lights blink, you answer with a sentence.",
+      "ukrainian": "Ліхтарі моргають, ти відповідаєш реченням.",
+      "category": "Purpose",
+      "generated_at": "2026-10-16T17:10:16.253680"
     }
   ],
-  "last_updated": "2026-10-16T05:34:29.752165"
+  "last_updated": "2026-10-16T17:10:16.253681"
 }
