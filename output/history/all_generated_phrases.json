@@ -26999,7 +26999,37 @@
       "ukrainian": "Коли шум росте, я сповільнюю кроки, слухаю.",
       "category": "Purpose",
       "generated_at": "2026-10-20T05:44:08.900615"
+    },
+    {
+      "english": "Say hello first, let courage answer",
+      "ukrainian": "Скажи привіт спершу, дай сміливості відповісти",
+      "category": "Success",
+      "generated_at": "2026-10-20T17:46:44.900996"
+    },
+    {
+      "english": "Open your notebook, breathe, begin again",
+      "ukrainian": "Відкрий зошит, вдихни, почни знову",
+      "category": "Success",
+      "generated_at": "2026-10-20T17:46:44.901009"
+    },
+    {
+      "english": "Water your focus, weeds can’t win",
+      "ukrainian": "Поливай увагу, бур’яни не переможуть",
+      "category": "Success",
+      "generated_at": "2026-10-20T17:46:44.901010"
+    },
+    {
+      "english": "Turn off noise, choose one clear task",
+      "ukrainian": "Вимкни шум, вибери одне чітке діло",
+      "category": "Success",
+      "generated_at": "2026-10-20T17:46:44.901011"
+    },
+    {
+      "english": "Write the day down, watch it shift",
+      "ukrainian": "Запиши день, і він зміниться",
+      "category": "Success",
+      "generated_at": "2026-10-20T17:46:44.901012"
     }
   ],
-  "last_updated": "2026-10-20T05:44:08.900617"
+  "last_updated": "2026-10-20T17:46:44.901013"
 }
