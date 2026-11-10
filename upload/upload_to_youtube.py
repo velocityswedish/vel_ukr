@@ -1,7 +1,5 @@
 """
-YouTube Upload Script - Updated for 2025
-
-Uses refresh token from GitHub Secrets to upload videos.
+YouTube Shorts uploader (refresh token from GitHub Secrets).
 """
 
 import os
@@ -13,22 +11,17 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 import datetime
 
-# Load environment variables
 load_dotenv()
 
-def get_authenticated_service():
-    """Authenticate using refresh token from environment."""
 
-    # Get credentials from GitHub Secrets
+def get_authenticated_service():
     client_id = (os.getenv('YOUTUBE_CLIENT_ID') or os.getenv('YT_CLIENT_ID', '')).strip()
     client_secret = (os.getenv('YOUTUBE_CLIENT_SECRET') or os.getenv('YT_CLIENT_SECRET', '')).strip()
     refresh_token = (os.getenv('YOUTUBE_REFRESH_TOKEN') or os.getenv('YT_REFRESH_TOKEN', '')).strip()
 
-    # Debug info (masked)
-    def mask(s): return f"{s[:4]}...{s[-4:]}" if s and len(s) > 8 else "MISSING"
-    print(f"[youtube] Client ID: {mask(client_id)}")
-    print(f"[youtube] Client Secret: {mask(client_secret)}")
-    print(f"[youtube] Refresh Token: {mask(refresh_token)}")
+    print(f"[youtube] Client ID: {'set' if client_id else 'MISSING'}")
+    print(f"[youtube] Client Secret: {'set' if client_secret else 'MISSING'}")
+    print(f"[youtube] Refresh Token: {'set' if refresh_token else 'MISSING'}")
 
     if not all([client_id, client_secret, refresh_token]):
         raise ValueError(
@@ -38,7 +31,6 @@ def get_authenticated_service():
             "  - YOUTUBE_REFRESH_TOKEN"
         )
 
-    # Create credentials from refresh token
     creds = Credentials(
         None,
         refresh_token=refresh_token,
@@ -49,58 +41,80 @@ def get_authenticated_service():
     )
 
     try:
-        # Refresh to get access token
         creds.refresh(Request())
     except Exception as e:
         if "invalid_grant" in str(e).lower():
-            print("\n❌ [youtube] AUTH ERROR: Refresh token has EXPIRED or been REVOKED.")
-            print("💡 SOLUTION: You must generate a NEW refresh token.")
+            print("\n[youtube] AUTH ERROR: Refresh token has EXPIRED or been REVOKED.")
+            print("SOLUTION: Generate a NEW refresh token.")
             print("   1. Go to Google Cloud Console.")
-            print("   2. Ensure your 'OAuth Consent Screen' is in 'Production' or add yourself as a test user.")
+            print("   2. Ensure OAuth Consent Screen is in 'Production' or add yourself as a test user.")
             print("   3. Run a local script to get a new refresh token.")
         raise
 
     return build('youtube', 'v3', credentials=creds)
 
-def generate_video_metadata(category: str, num_phrases: int):
-    """Generate German title, description, and tags for the video"""
 
-    title = f"Deutsch Lernen: {num_phrases} Essentielle {category} Sätze 🇩🇪"
+def generate_video_metadata(category: str, num_phrases: int, phrases: list = None):
+    import config
 
-    description = f"""Lerne {num_phrases} essentielle deutsche Sätze für {category}!
+    lang = config.LANGUAGE["name"]
+    brand = config.BRAND
+    title = f"{lang} Learning: {num_phrases} Essential {category} Phrases"
 
-Perfekt für Anfänger, die Deutsch lernen. Jeder Satz beinhaltet:
-✅ Englischer Satz
-✅ Deutsche Übersetzung
-✅ Ausspracheführer
-✅ Verwendungskontext
+    description_lines = [
+        f"Learn {lang} with {brand}!",
+        f"",
+        f"Category: {category}",
+        f"",
+        f"Master {lang} one phrase at a time! Today's {category} lesson:",
+        f""
+    ]
 
-Abonniere für tägliche Deutschstunden!
+    if phrases:
+        for i, phrase in enumerate(phrases[:5], 1):
+            description_lines.append(f"{i}. {phrase['english']}")
+            description_lines.append(f"   {phrase.get('native', '')}")
+            transliteration = phrase.get('transliteration') or ''
+            if transliteration:
+                description_lines.append(f"   [{transliteration}]")
+            description_lines.append("")
 
-#DeutschLernen #DeutschStunden #DeutschFürAnfänger #SprachenLernen
-#Deutsch #Bildung #Tutorial #TäglichesDeutsch #{category.replace(' ', '')}
-"""
+    description_lines.extend([
+        f"Tip: Repeat each phrase out loud 3 times!",
+        f"Like this video if you learned something new!",
+        f"Comment your favorite phrase below!",
+        f"Subscribe for daily {lang} lessons!",
+        f"",
+        f"Pronunciation Guide:",
+        f"   The phonetic spelling in brackets helps you say it correctly!",
+        f"",
+        " ".join(config.HASHTAGS[:6]),
+        f"#Education #Tutorial #{category.replace(' ', '')}",
+    ])
+
+    description = "\n".join(description_lines)
 
     tags = [
-        "deutsch lernen",
-        "deutsch stunden",
-        "deutsch für anfänger",
-        "deutsche sätze",
-        "sprachen lernen",
-        "deutsch tutorial",
-        "deutsch sprechen",
+        f"learn {lang.lower()}",
+        f"{lang.lower()} lessons",
+        f"{lang.lower()} for beginners",
+        f"{lang.lower()} phrases",
+        "language learning",
+        f"{lang.lower()} tutorial",
+        f"speak {lang.lower()}",
         category.lower(),
-        "bildung",
-        "tägliches deutsch",
-        "velocity german"
+        "education",
+        f"daily {lang.lower()}",
+        brand.lower(),
+        f"{lang.lower()} learning",
     ]
 
     return title, description, tags
 
-def upload_to_youtube(video_path, title, description, tags=None, category_id='27'):
-    """Upload video to YouTube and return result."""
+
+def upload_to_youtube(video_path, title, description, tags=None, category_id='22'):
     if tags is None:
-        tags = ['deutsch lernen', 'german lessons']
+        tags = ['education', 'language learning']
     youtube = get_authenticated_service()
 
     body = {
@@ -108,7 +122,7 @@ def upload_to_youtube(video_path, title, description, tags=None, category_id='27
             'title': title,
             'description': description,
             'tags': tags,
-            'categoryId': category_id  # 27 = Education
+            'categoryId': category_id
         },
         'status': {
             'privacyStatus': 'public',
@@ -116,7 +130,6 @@ def upload_to_youtube(video_path, title, description, tags=None, category_id='27
         }
     }
 
-    # Add Shorts tag if not present
     if '#Shorts' not in body['snippet']['description']:
         body['snippet']['description'] += '\n\n#Shorts'
 
@@ -140,36 +153,35 @@ def upload_to_youtube(video_path, title, description, tags=None, category_id='27
         if status:
             print(f"[youtube] Progress: {int(status.progress() * 100)}%")
 
-    print(f"[youtube] ✅ Uploaded! Video ID: {response['id']}")
-    print(f"[youtube] URL: https://youtube.com/watch?v={response['id']}")
+    print(f"[youtube] Uploaded! Video ID: {response['id']}")
+    print(f"[youtube] URL: https://youtube.com/shorts/{response['id']}")
 
     return response
 
-def main():
-    """Upload the generated video to YouTube."""
-    video_file = Path('final_video.mp4')
 
+def main():
+    video_file = Path('final_video.mp4')
     if not video_file.exists():
-        print("[youtube] ❌ No video found at final_video.mp4")
+        print("[youtube] No video found at final_video.mp4")
         return
 
-    # Generate German metadata for test
-    title = "Deutsch Lernen: 5 Essentielle Motivation Sätze 🇩🇪"
-    description = "Lerne 5 essentielle deutsche Sätze für Motivation! #DeutschLernen #DeutschStunden"
-    tags = ['deutsch lernen', 'german lessons', 'motivation']
+    import config
+    title = f"Learn {config.LANGUAGE['name']} Daily"
+    description = "#shorts #language #education"
+    tags = ['education', 'language learning']
 
-    # Upload
     try:
         upload_to_youtube(
             video_path=video_file,
             title=title,
             description=description,
             tags=tags,
-            category_id='27'  # Education
+            category_id='22'
         )
     except Exception as e:
-        print(f"[youtube] ❌ Upload failed: {e}")
+        print(f"[youtube] Upload failed: {e}")
         raise
+
 
 if __name__ == '__main__':
     main()
