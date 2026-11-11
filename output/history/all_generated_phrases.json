@@ -29469,7 +29469,42 @@
       "transliteration": "Zihny kolina miak o, trymai sia na zemli.",
       "category": "Strength",
       "generated_at": "2026-11-11T21:13:04.171956"
+    },
+    {
+      "english": "Please, take this seat for a while.",
+      "ukrainian": "Будь ласка, сядьте тут трохи.",
+      "transliteration": "budʹ laska, siʼadʹte tut trochy",
+      "category": "Kindness",
+      "generated_at": "2026-11-11T23:17:13.269863"
+    },
+    {
+      "english": "You matter, even on tough days.",
+      "ukrainian": "Ти важливий, навіть у важкі дні.",
+      "transliteration": "ty vazhlyvyj, navitʹ u vazhki dni",
+      "category": "Kindness",
+      "generated_at": "2026-11-11T23:17:13.269878"
+    },
+    {
+      "english": "I noticed you, and I care.",
+      "ukrainian": "Я помітив(ла) тебе, і мені не байдуже.",
+      "transliteration": "ya pomitiv(la) tebe, i meni ne bajduzhe",
+      "category": "Kindness",
+      "generated_at": "2026-11-11T23:17:13.269880"
+    },
+    {
+      "english": "It’s okay to move slowly, no rush.",
+      "ukrainian": "Нічого, можна повільніше, без поспіху.",
+      "transliteration": "nichogo, mozhna povilʹnishe, bez pospiʹkhu",
+      "category": "Kindness",
+      "generated_at": "2026-11-11T23:17:13.269882"
+    },
+    {
+      "english": "Let me help you, right now.",
+      "ukrainian": "Дозволь допомогти тобі просто зараз.",
+      "transliteration": "dozvolʹ dopomogty tobi prosto zaraz",
+      "category": "Kindness",
+      "generated_at": "2026-11-11T23:17:13.269883"
     }
   ],
-  "last_updated": "2026-11-11T21:13:04.171958"
+  "last_updated": "2026-11-11T23:17:13.269886"
 }
