@@ -99,8 +99,8 @@ async def _synth_with_retry(text: str, voices: list[str], out_path: Path, rate: 
     raise RuntimeError(f"All voices failed for text: {text[:60]!r} ({last_error})")
 
 
-def map_word_timings(text: str, boundaries: list, duration: float) -> list:
-    if config.LANGUAGE.get("char_tiles"):
+def map_word_timings(text: str, boundaries: list, duration: float, split_chars: bool = False) -> list:
+    if split_chars:
         words = []
         for ch in text:
             if ch.isspace():
@@ -214,7 +214,8 @@ async def _synth_phrase(index: int, phrase: dict, audio_dir: Path, semaphore):
         "en_duration": en_dur,
         "vi_duration": vi_dur,
         "en_words": map_word_timings(phrase["english"], en_bounds, en_dur),
-        "vi_words": map_word_timings(phrase["native"], vi_bounds, vi_dur),
+        "vi_words": map_word_timings(phrase["native"], vi_bounds, vi_dur,
+                                     split_chars=bool(lang.get("char_tiles"))),
     }
 
 
