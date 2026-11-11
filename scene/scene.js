@@ -466,7 +466,7 @@
     $('natLabel').classList.toggle('playing', viPlaying);
     animateEq($('natEq'), t, viPlaying);
 
-    const tr = seg(t, p.vi_end + 0.08, p.vi_end + 0.5);
+    const tr = p.transliteration ? seg(t, nr + 0.3, nr + 0.75) : 0;
     tf($('translit'), 0, (1 - easeOutCubic(tr)) * 18, 1, 0);
     op($('translit'), tr);
 

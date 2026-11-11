@@ -25,17 +25,21 @@ def load_timeline(video_path) -> dict:
 
 
 def pick_cover_time(video_path) -> float:
-    """Best moment to snapshot: a native-phrase reveal near the middle of the video."""
+    """Moment where one phrase is shown in full: English, native tiles and romanization."""
     tl = load_timeline(video_path)
     duration = float(tl.get("duration") or 0.0)
 
     candidates = []
     for phrase in tl.get("phrases", []):
         try:
-            reveal = float(phrase.get("nat_reveal", 0.0)) + 0.95
+            if phrase.get("vi_repeat_end") is not None:
+                # tail hold after the repeat: every element is fully visible, no highlight
+                when = float(phrase["vi_repeat_end"]) + 0.55
+            else:
+                when = float(phrase.get("nat_reveal", 0.0)) + 1.1
         except (TypeError, ValueError):
             continue
-        candidates.append(reveal)
+        candidates.append(when)
 
     if candidates:
         low, high = COVER_WINDOW
