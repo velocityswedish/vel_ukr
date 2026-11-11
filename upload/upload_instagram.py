@@ -6,6 +6,8 @@ import os, subprocess, requests, tempfile, time
 from pathlib import Path
 from dotenv import load_dotenv
 
+from cover_frame import thumb_offset_ms
+
 load_dotenv()
 
 TEMP_DIR = Path(tempfile.gettempdir()) / "ig_compress"
@@ -185,7 +187,9 @@ def upload_to_instagram(video_path, caption, is_story=False):
         if not is_story:
             params['caption'] = caption_limited
             params['share_to_feed'] = 'false'
-            params['thumb_offset'] = '5000'
+            offset = thumb_offset_ms(video_path)
+            params['thumb_offset'] = str(offset if offset is not None else 5000)
+            print(f"[instagram] Cover frame offset: {params['thumb_offset']}ms")
         cont_resp = requests.post(container_url, params=params, timeout=60)
         if cont_resp.status_code != 200:
             print(f"[instagram] Facebook Graph failed, retrying Instagram API...")

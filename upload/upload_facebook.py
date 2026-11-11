@@ -5,11 +5,46 @@ Facebook Graph API for uploading Reels to Facebook Page.
 """
 
 import os
+import time
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
 
+from cover_frame import extract_cover_frame
+
 load_dotenv()
+
+
+def _set_reel_cover(video_id, access_token, video_path):
+    cover = extract_cover_frame(video_path)
+    if not cover:
+        print("[facebook] No cover frame available, keeping default")
+        return
+    endpoints = ("https://graph-video.facebook.com/v21.0", "https://graph.facebook.com/v21.0")
+    for attempt in range(8):
+        for base in endpoints:
+            try:
+                with open(cover, 'rb') as fh:
+                    res = requests.post(
+                        f"{base}/{video_id}/thumbnails",
+                        data={'access_token': access_token, 'is_preferred': 'true'},
+                        files={'source': ('cover.jpg', fh, 'image/jpeg')},
+                        timeout=(15, 120),
+                    )
+                if res.status_code == 200:
+                    print(f"[facebook] Cover set to phrase frame: {cover.name}")
+                    return
+                body = res.json() if res.text else {}
+                err = body.get('error', {}) if isinstance(body, dict) else {}
+                print(f"[facebook] Cover attempt {attempt + 1} ({base.split('/')[2]}): "
+                      f"{res.status_code} - {str(err or res.text)[:160]}")
+                if err.get('code') in (100, 190, 200):
+                    print("[facebook] Cover endpoint rejected the request, keeping default")
+                    return
+            except Exception as exc:
+                print(f"[facebook] Cover attempt {attempt + 1} error: {exc}")
+        time.sleep(15)
+    print("[facebook] Could not set custom cover; reel keeps the default frame")
 
 
 def _post_pinned_comment(video_id, description, access_token, page_id):
@@ -127,6 +162,10 @@ def upload_to_facebook(video_path, description, title="Velocity lesson"):
 
         if res_finish.status_code == 200 and res_finish.json().get('success'):
             print(f"[facebook] SUCCESS! Reel uploaded! Video ID: {video_id}")
+            try:
+                _set_reel_cover(video_id, access_token, video_path)
+            except Exception as exc:
+                print(f"[facebook] Cover setup skipped: {exc}")
             _post_pinned_comment(video_id, description, access_token, page_id)
             return {
                 'id': video_id,
