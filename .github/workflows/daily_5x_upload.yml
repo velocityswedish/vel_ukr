@@ -1,12 +1,8 @@
-name: Velocity Ukrainian - Daily 5x Upload
+name: Velocity Ukrainian - Daily Upload
 
 on:
   schedule:
-    - cron: '0 12 * * *'
     - cron: '0 14 * * *'
-    - cron: '0 17 * * *'
-    - cron: '0 20 * * *'
-    - cron: '0 0 * * *'
   workflow_dispatch:
 
 permissions:
