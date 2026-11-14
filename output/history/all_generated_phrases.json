@@ -29784,7 +29784,42 @@
       "transliteration": "Navit siogodni, ya roblyu odnu malenku spravu.",
       "category": "Perseverance",
       "generated_at": "2026-11-13T20:50:52.700841"
+    },
+    {
+      "english": "Okay, I’ll wait, no panic.",
+      "ukrainian": "Добре, я зачекаю, без паніки.",
+      "transliteration": "Dobре, ya zachekaiu, bez paniky.",
+      "category": "Patience",
+      "generated_at": "2026-11-14T19:00:38.279962"
+    },
+    {
+      "english": "Take your time, it’ll work out.",
+      "ukrainian": "Не поспішай, усе буде добре.",
+      "transliteration": "Ne pospišai, use bude dobre.",
+      "category": "Patience",
+      "generated_at": "2026-11-14T19:00:38.279974"
+    },
+    {
+      "english": "Let it simmer, I’m in no rush.",
+      "ukrainian": "Нехай трохи настоїться, я не поспішаю.",
+      "transliteration": "Nekhaj tróšky nastojitsia, ya ne pospišaiu.",
+      "category": "Patience",
+      "generated_at": "2026-11-14T19:00:38.279976"
+    },
+    {
+      "english": "I can wait, the answer comes.",
+      "ukrainian": "Я можу зачекати, відповідь прийде.",
+      "transliteration": "Ya mozhу zachekaty, vidpovídʹ pryiide.",
+      "category": "Patience",
+      "generated_at": "2026-11-14T19:00:38.279977"
+    },
+    {
+      "english": "Hold on, we’re almost there.",
+      "ukrainian": "Тримайся, ми вже майже на місці.",
+      "transliteration": "Trymaiся, my vzhe maizhe na mistsi.",
+      "category": "Patience",
+      "generated_at": "2026-11-14T19:00:38.279979"
     }
   ],
-  "last_updated": "2026-11-13T20:50:52.700843"
+  "last_updated": "2026-11-14T19:00:38.279981"
 }
