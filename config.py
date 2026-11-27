@@ -50,8 +50,8 @@ LANGUAGE = {'code': 'uk',
  'native_fallback_voice': 'uk-UA-PolinaNeural',
  'native_engine': 'edge',
  'native_lang_code': 'uk',
- 'english_rate': '-2%',
- 'native_rate': '-6%',
+ 'english_rate': '+0%',
+ 'native_rate': '-4%',
  'english_pitch': '+0Hz',
  'native_pitch': '+0Hz',
  'native_label': 'УКРАЇНСЬКА',
@@ -219,9 +219,9 @@ RECIPES = [
     {"id": "cherry-4-standard", "theme": "cherry", "phrases": 4, "pace": "standard", "music": "bright", "hook": "number"},
     {"id": "mango-4-tight",   "theme": "mango",  "phrases": 4, "pace": "tight",    "music": "chill",  "hook": "count"},
     {"id": "duo-4-tight",     "theme": "duo",    "phrases": 4, "pace": "tight",    "music": "bright", "hook": "count"},
-    {
-        "id": "storybook-3", "theme": "duo", "phrases": 3, "pace": "story", "music": "chill",
-        "hook": "count", "style": "storybook", "intro": 3.0, "outro": 4.8,
+        {
+        "id": "storybook-3", "theme": "duo", "phrases": 3, "pace": "tight", "music": "bright",
+        "hook": "question", "style": "storybook", "intro": 2.0, "outro": 3.6,
     },
 ]
 
